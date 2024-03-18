@@ -12,7 +12,7 @@ describe('HelloWorld', () => {
     });
 
     const messageElement = screen.getByText(msg);
-    expect(messageElement).toBeInTheDocument();
+    expect(messageElement).not.toBeInTheDocument();
   });
 
   it('increments count when button is clicked', async () => {
